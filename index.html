@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katerina Naydenova - Research Homepage</title>
+    <link rel="icon" type="image/png" href="images/grid_thumbnail.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .nav-link.active {
+            border-bottom-width: 2px;
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+        /* Style for publication dates */
+        .publication-date {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+	}
+	.gallery-image {
+            aspect-ratio: 16 / 9;
+            object-fit: contain; /* Use contain to see the whole image */
+            width: 100%;
+            height: 100%;
+            background-color: #f3f4f6; /* A light background for letterboxing */
+        }
+        .carousel-item {
+            transition: opacity 0.7s ease-in-out;     
+        }
+    </style>
+<style>
+  a.publication-link:link,
+  a.publication-link:visited {
+    color: #321353; 
+    text-decoration: underline;
+  }
+
+  a.publication-link:hover,
+  a.publication-link:active {
+    color: #dcc7f2; 
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-violet-900 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <h1 class="text-3xl font-bold">Katerina Naydenova</h1>
+                    <p class="text-md text-gray-300">Research Homepage</p>
+                </div>
+                <nav id="nav-menu" class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                    <a href="#home" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Home</a>
+                    <a href="#publications" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Publications</a>
+                    <a href="#bio" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Bio</a>
+                    <a href="#resources" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Resources</a>
+                    <a href="#press" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Press</a>
+                    <a href="#contact" class="nav-link px-3 py-2 text-gray-300 hover:text-white transition duration-300">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Research Interests</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+
+Cells are continuously challenged by a variety of dangerous cytosolic materials, including invading bacteria, misfolded proteins or damaged organelles. All of these need to be promptly detected, triaged and possibly cleared to ensure maintenance of physiological functions and cell survival. If these pathways fail, the consequences are catastrophic: accumulation of protein aggregates is associated with neurodegenerative diseases such as Alzheimer’s and Parkinson’s; impaired lipid turnover contributes to metabolic syndromes including type 2 diabetes and fatty liver disease; and defective organelle recycling can trigger inflammatory disorders and compromise immune responses. In my current work, I use bacterial infection models, combined with structural biology and biochemical methods, to understand how cells defend themselves against cytosol-invading bacteria. At the same time, it is becoming apparent that the same pathways that survey the cytosol for invading pathogens are also repurposed for danger sensing and resolution in many other physiological contexts. Therefore, I am interested in elucidating the universal and cell-type specific molecular principles that enable cells to detect diverse threats and decide their fate - destroy, recycle, or tolerate. Structural biology is a powerful tool to investigate these mechanisms, but putting protein structures into their cellular context remains challenging. Building on my background in physics and on my previous experience in methods development for electron microscopy (see my Publications page for more details), I continue to design new methods and instruments that extend the limits of what we can see inside cells, enabling experiments that are impossible with existing technologies.
+
+
+</p>
+                </div>
+
+
+                <div class="mt-12">
+                    <h2 class="text-2xl font-bold mb-4">Research Highlights</h2>
+                    <div id="research-carousel" class="relative w-full max-w-4xl mx-auto">
+                        <div class="relative h-80 overflow-hidden rounded-lg md:h-96 shadow-lg bg-gray-100" aria-live="polite">
+                            
+                            <div data-carousel-item="0" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100">
+                                <img src="images/grids.png" class="gallery-image cursor-pointer" alt="Scanning electron micrographs of the improved cryoEM specimen supports">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">HexAuFoil: improved specimen supports for cryoEM, that eliminate specimen movement and can be manufactured at scale.</p>
+                                </div>
+                            </div>
+
+                            <div data-carousel-item="1" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/RCdLH1.png" class="gallery-image cursor-pointer" alt="Structure of a double light-harvesting system from a rare bacterium">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">Structure of the light-harvesting complex from the bacterium <i>Gemmatimonas phototrophica</i>.</p>
+                                </div>
+                            </div>
+
+                            <div data-carousel-item="2" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/radiationdamage.png" class="gallery-image cursor-pointer" alt="Visualisation of the effects of radiation damage during imaging with electrons">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">Visualisation of the effects of radiation damage on protein structure during imaging with electrons.</p>
+                                </div>
+                            </div>
+
+			    <div data-carousel-item="3" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/wafer.png" class="gallery-image cursor-pointer" alt="A wafer-scale, customisable process for cryoEM grid manufacturing">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">A wafer-scale, customisable process for cryoEM grid manufacturing, inspired by techniques used in the semiconductor industry.</p>
+                                </div>
+                            </div>
+
+                            <div data-carousel-item="4" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/100kvmicroscope.jpg" class="gallery-image cursor-pointer" alt="A low-cost 100 kV cryogenic electron microscope, designed specifically for protein structure determination">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">A low-cost 100 kV cryogenic electron microscope, designed specifically for protein structure determination.</p>
+                                </div>
+                            </div>
+                            <div data-carousel-item="5" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/structures.png" class="gallery-image cursor-pointer" alt="A collection of protein structures, determined using cryoEM at 100 keV">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">A collection of protein structures, determined using cryoEM at 100 keV.</p>
+                                </div>
+                            </div>
+                            <div data-carousel-item="6" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/host-pathogen.png" class="gallery-image cursor-pointer" alt="Illustration of the host-pathogen arms race">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">Illustration of the host-pathogen arms race, where the host protein RNF213 defends the cytosol from invading bacteria by ubiquitylating them, whereas certain cytosol-adapted bacteria, such as <i>Shigella flexneri</i> have evolved effector proteins that ubiquitylate and degrade the host anti-bacterial effectors.</p>
+                                </div>
+                            </div>
+                            <div data-carousel-item="7" class="carousel-item absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+                                <img src="images/rnf213-ipah14.png" class="gallery-image cursor-pointer" alt="Structure of the host protein RNF213 bound to the bacterial secreted effector IpaH1.4">
+                                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-60 text-white text-center">
+                                    <p class="text-sm italic">Structure of the host protein RNF213 bound to the bacterial secreted effector IpaH1.4, that can target RNF213 for degradation.</p>
+                                </div>
+                            </div>
+                        </div> <button type="button" id="carousel-prev" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" aria-label="Previous Slide">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" id="carousel-next" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" aria-label="Next Slide">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="tab-content">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Publications</h2>
+                <div class="text-gray-700 leading-relaxed">
+		<p class="mb-6">A complete and up-to-date list of my publications can be found on my <a href="https://scholar.google.com/citations?user=lUTwBPIAAAAJ&hl=en" class="publication-link">Google Scholar</a> page.
+                    <div class="publication-date">2025</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>JL Dickerson, K Naydenova, MJ Peet, H Wilson, B Nandy, G McMullan, R Morrison & CJ Russo. <strong>Reducing the effects of radiation damage in cryo-EM using liquid helium temperatures</strong>. <em>PNAS</em> (2025).</li>
+			<li>K Naydenova*, K Boyle*, C Pathe*, P Pothukuchi, A Crespillo-Casado, F Scharte, P-M Hammoudi, EG Otten & F Randow. <strong><i>Shigella flexneri</i> evades LPS ubiquitylation through IpaH1.4-mediated degradation of RNF213</strong>. <em>NSMB</em> (2025). </li>
+			</ul>
+		<div class="publication-date">2024</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>Y Hooda*, A Sente*, RM Judy*, L Smalinskaitė, S-Y Peak-Chew, K Naydenova, T Malinauskas, SW Hardwick, DY Chirgadze, AR Aricescu & RS Hegde. <strong>Mechanism of NACHO-mediated assembly of pentameric ligand-gated ion channels</strong>. <em>bioRxiv</em> (2024, preprint).</li>
+			<li>A Crespillo-Casado*, P Pothukuchi*, K Naydenova, MCJ Yip, JM Young, J Boulanger, V Dharamdasani, C Harper, P-M Hammoudi, EG Otten, K Boyle, M Gogoi, HS Malik & F Randow. <strong>Recognition of phylogenetically diverse pathogens through enzymatically amplified recruitment of RNF213</strong>. <em>EMBO Reports</em> (2024).</li>
+</ul>
+
+
+		<div class="publication-date">2023</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>G McMullan, K Naydenova, D Mihaylov, K Yamashita, MJ Peet, H Wilson, JL Dickerson, S Chen, G Cannone, Y Lee, KA Hutchings, O Gittins, MA Sobhy, T Wells, MM El-Gomati, J Dalby, M Meffert, C Schulze-Briese, R Henderson & CJ Russo. <strong>Structure determination by cryoEM at 100 keV</strong>. <em>PNAS</em> (2023).</li>
+			<li>JL Dickerson, E Leahy, MJ Peet, K Naydenova & CJ Russo. <strong>Accurate magnification determination for cryoEM using gold</strong>. <em>Ultramicroscopy</em> (2023).</li>
+			</ul>
+
+
+		<div class="publication-date">2022</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>CJ Russo, JL Dickerson & K Naydenova. <strong>Cryomicroscopy <i>in situ</i>: what is the smallest molecule that can be directly identified without labels in a cell?</strong> <em>Faraday Discussions</em> (2022).</li>
+			<li>K Naydenova, A Kamegawa, MJ Peet, R Henderson, Y Fujiyoshi & CJ Russo. <strong>On the reduction in the effects of radiation damage to two-dimensional crystals of organic and biological molecules at liquid-helium temperature</strong>. <em>Ultramicroscopy</em> (2022).</li>
+			<li>K Naydenova & CJ Russo. <strong>Integrated wafer-scale manufacturing of electron cryomicroscopy specimen supports</strong>. <em>Ultramicroscopy</em> (2022).
+			<li>A Sente, R Desai, K Naydenova, T Malinauskas, Y Jounaidi, J Miehling, X Zhou, S Masiulis, SW Hardwick, DY Chirgadze, KW Miller & AR Aricescu. <strong>Differential assembly diversifies GABAA receptor structures and signalling</strong>. <em>Nature</em> (2022).</li>
+			<li>P Qian, AT Gardiner, I Šímová, K Naydenova, TI Croll, PJ Jackson, Nupur, M Kloz, P Čubáková, M Kuzma, Y Zeng, P Castro-Hartmann, B van Knippenberg, KN Goldie, D Kaftan, P Hrouzek, J Hájek, J Agirre, CA Siebert, D Bína, K Sader, H Stahlberg, R Sobotka, CJ Russo, T Polívka, CN Hunter & M Koblížek. <strong>2.4 Å structure of the double ring <i>Gemmatimonas phototrophica</i> photosystem</strong>. <em>Science Advances</em> (2022).</li>
+			</ul>
+
+
+		<div class="publication-date">2021</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>K Naydenova*, KW Muir*, L-F Wu*, Z Zhang, F Coscia, MJ Peet, P Castro-Hartmann, P Qian, K Sader, K Dent, D Kimanius, JD Sutherland, J Löwe, D Barford & CJ Russo. <strong>Structure of the SARS-CoV-2 RNA-dependent RNA polymerase in the presence of favipiravir-RTP</strong>. <em>PNAS</em> (2021).</li>
+			<li>AT Gardiner*, K Naydenova*, P Castro-Hartmann, TC Nguyen-Phan, CJ Russo, K Sader, CN Hunter, RJ Cogdell & P Qian. <strong>The 2.4 Å cryo-EM structure of a heptameric light-harvesting 2 complex reveals two carotenoid energy transfer pathways</strong>. <em>Science Advances</em> (2021).</li>
+			</ul>
+
+
+		<div class="publication-date">2020</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>K Naydenova, P Jia & CJ Russo. <strong>Cryo-EM with sub–1 Å specimen movement</strong>. <em>Science</em> (2020).
+			</ul>
+
+
+		<div class="publication-date">2019</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>K Naydenova, G McMullan, MJ Peet, Y Lee, PC Edwards, S Chen, E Leahy, S Scotcher, R Henderson & CJ Russo. <strong>CryoEM at 100 keV: a demonstration and prospects</strong>. <em>IUCrJ</em> (2019).</li>
+			<li>K Naydenova*, MJ Peet* & CJ Russo. <strong>Multifunctional graphene supports for electron cryomicroscopy</strong>. <em>PNAS</em> (2019).</li>
+			</ul>
+
+
+		<div class="publication-date">2017</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>K Naydenova & CJ Russo. <strong>Measuring the effects of particle orientation to improve the efficiency of electron cryomicroscopy</strong>. <em>Nature Communications</em> (2017).</li>
+			</ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="tab-content">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+<h2 class="text-2xl font-bold mb-4">Brief Bio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="md:col-span-2">
+                        
+                        <div class="space-y-4 text-gray-700 leading-relaxed">
+                            <p>During my high-school years, I was an avid competitor in the International Physics Olympiads, which secured me a place to read the Natural Sciences Tripos (BA and MSci) at the University of Cambridge, specialising in physics. During this time, I first joined <a href="https://www.mrc-lmb.cam.ac.uk/crusso/index.html" class="publication-link">Chris Russo's group</a> in the Structural Studies Division of the <a href="https://www2.mrc-lmb.cam.ac.uk/" class="publication-link">MRC Laboratory of Molecular Biology</a> (MRC LMB) in Cambridge as a summer student in 2016. We were having a great time, so I stayed on for another summer internship, as well as for my master's project, my PhD and a brief postdoc. We elucidated the physical principles that limit how well one can image biological molecules and we built technologies to improve the capabilities of cryogenic electron microscopy (cryoEM) for structural biologists: for example, during my PhD I developed the <a href="https://www.quantifoil.com/products/hexaufoil" class="publication-link">HexAuFoil cryoEM grids</a>. For this work, I was awarded the Max Perutz Prize for outstanding PhD research in 2020. By the end of my PhD, in 2023, the cryoEM field was growing exponentially and hundreds of protein structures were being solved per week - and I realised it was time for a new adventure. So for my postdoc, I moved into cell biology, and joined <a href="https://www2.mrc-lmb.cam.ac.uk/groups/randow/Felix_Randow_Lab.html" class="publication-link">the group of Felix Randow<a/>, also at the MRC LMB. Our group studies cell-autonomous immunity, which is the ability of non-specialised, non-immune cells to defend themselves against pathogens. We also investigate how professional cytosol-dwelling pathogens evade these host defences. Alongside my research, I also enjoy teaching at the annual <a href="https://meetings.cshl.edu/courses.aspx?course=C-CRYOEM" class="publication-link">Cold Spring Harbor cryoEM course</a> in the USA.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/katerinanaydenova.jpg" alt="Katerina Naydenova" width=300 height=300>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                     <h3 class="text-xl font-bold mb-4">Academic History</h3>
+                     <div class="space-y-4">
+                         <p class="text-gray-700">2023 – 2025 Career Development Fellow. Investigation of anti-bacterial innate immune signalling pathways. Felix Randow group in the PNAC Division of MRC LMB, Cambridge, UK. </p>
+			<p class="text-gray-700">2022 – 2023 Postdoctoral Fellow. Development of new methods for in situ cryogenic electron microscopy. Chris Russo group in the Structural Studies Division of MRC LMB, Cambridge, UK. </p>
+			<p class="text-gray-700">2018 – 2022 PhD in Biological Sciences. Thesis: <i>The physical origins of specimen movement in electron cryomicroscopy and how to eliminate it</i>. Chris Russo group in the Structural Studies Division of MRC LMB, Cambridge, UK. </p>
+			<p class="text-gray-700">2017 – 2018 MSci in Natural Sciences (Physics) from the University of Cambridge. Thesis: <i> Spectroscopy of genetically encodable fluorescent proteins at cryogenic temperatures</i>. Chris Russo group in the Structural Studies Division of MRC LMB, Cambridge, UK. </p>
+			<p class="text-gray-700">2016 – 2017 Research Associate (Summer Intern). Development of methods for determining, controlling, and analysing the effects of the surface energy of cryoEM specimen supports. Chris Russo group in the Structural Studies Division of MRC LMB, Cambridge, UK. </p>
+			<p class="text-gray-700">2014 – 2017 BA Hons in Natural Sciences (Physics) from the University of Cambridge, UK.</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="tab-content active">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Resources</h2>
+		<div class="mt-12">
+                     <h3 class="text-xl font-bold mb-4">Talks and Lectures</h3>
+                     <div class="space-y-4">
+                        <p class="text-gray-700"><a href="https://www.youtube.com/watch?v=hF17d6XjV98&t=5s&pp=ygUSa2F0ZXJpbmEgbmF5ZGVub3Zh" class="publication-link">CryoEM specimen preparation.</a> This lecture is part of the 2023 <a href="https://www2.mrc-lmb.cam.ac.uk/research/scientific-training/electron-microscopy/">MRC LMB CryoEM course</a>, which is intended to be watched as a continuation of the previous years' courses.</p>
+			<p class="text-gray-700"><a href="https://chanzuckerberg.com/science/meetings/hardware-frontiers-cryoet-workshop/" class="publication-link">New specimen support technologies for cryoET</a>. I gave this talk at the Chan Zuckerberg Imaging Institute CryoET Hardware Workshop in Redwood City, CA, USA in May 2023. Here, I summarise everything we have learned about the physics of cryoEM specimens in the context of isolated proteins, and how this knowledge might be extended to cellular specimens and electron tomography.</p>
+			<p class="text-gray-700"><a href="https://www.youtube.com/watch?v=zBQYuCGDurQ&t=1610s&pp=ygUSa2F0ZXJpbmEgbmF5ZGVub3Zh" class="publication-link">Molecular structure extrapolation to zero dose with cryoEM.</a> I gave this talk at the Institute for Pure and Applied Mathematics in UCLA, USA in November 2022. I describe how we developed a method to acquire movement-free cryoEM micrographs, and how this, in turn, has allowed us to develop a computational method for calculating the cryoEM structures of undamaged biological molecules.</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Press Section -->
+        <section id="press" class="tab-content">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Press</h2>
+                <div class="text-gray-700 leading-relaxed">
+		    <div class="publication-date">2025</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>Cambridge Independent:</strong> <a href="https://www.cambridgeindependent.co.uk/news/new-cryo-em-frontier-opens-at-260c-thanks-to-research-at-lm-9415388/" class="publication-link">New cryo-EM frontier opens at -260C thanks to research at MRC Laboratory of Molecular Biology in Cambridge</a></li>
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/cytosol-adapted-bacterium-usurps-host-defence-mechanism-to-evade-lps-ubiquitylation/" class="publication-link">Cytosol-adapted bacterium usurps host defence mechanism to evade LPS ubiquitylation</a></li>
+			</ul>
+                    <div class="publication-date">2024</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>Microscopy Today:</strong> <a href="https://www.quantifoil.com/news/hexaufoil-announcement-0" class="publication-link">HexAuFoil cryo-EM specimen support grids named as a winner of the 15th Microscopy Today Innovation Awards</a></li>
+			</ul>
+                    <div class="publication-date">2023</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>Cambridge Independent:</strong> <a href="https://www.cambridgeindependent.co.uk/news/new-era-of-lower-cost-lower-energy-cryo-em-ushered-in-by-lm-9342658/" class="publication-link">New era of lower-cost, lower-energy cryo-EM ushered in by MRC Laboratory of Molecular Biology in Cambridge</a></li>
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/low-energy-cryo-em-to-widen-accessibility-for-fast-and-accurate-structure-determination/" class="publication-link">Low energy cryo-EM to widen accessibility for fast and accurate structure determination</a></li>
+			<li><strong>Science:</strong> <a href="https://www.science.org/content/article/cheaper-microscope-could-bring-protein-mapping-technique-masses" class="publication-link">Cheaper microscope could bring protein mapping technique to the masses</a></li>
+			<li><strong>Nature:</strong> <a href="https://www.nature.com/articles/d41586-023-03748-2" class="publication-link">A low-cost electron microscope maps proteins at speed</a></li>
+			<li><strong>Phys.org:</strong> <a href="https://phys.org/news/2023-11-smaller-cost-efficient-electron-cryo-microscope.html" class="publication-link">Researchers design smaller, more cost-efficient electron cryo-microscope</a></li>
+			</ul>
+                    <div class="publication-date">2022</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>Diamond Light Source News:</strong> <a href="https://www.diamond.ac.uk/Home/News/LatestNews/2022/16-02-22.html" class="publication-link">Scientists show how an enigmatic bacterium from the Gobi desert harvests solar energy</a></li>
+			<li><strong>MRC LMB News:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/lmb-students-recognised-by-cambridge-society-for-the-application-of-research/" class="publication-link">LMB students recognised by Cambridge Society for the Application of Research</a></li>
+			</ul>
+                    <div class="publication-date">2021</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/scaling-up-grid-manufacture-to-solve-bottleneck-in-cryo-em/" class="publication-link">Scaling-up grid manufacture to solve bottleneck in cryo-EM</a></li>
+			<li><strong>Cambridge Independent:</strong> <a href="https://www.cambridgeindependent.co.uk/news/global-bottleneck-holding-up-discovery-using-cryo-em-is-solv-9227739/" class="publication-link">Global bottleneck holding up discovery using cryo-EM is solved by MRC Laboratory of Molecular Biology in Cambridge</a></li>
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/targeting-rna-replication-in-sars-cov-2/" class="publication-link">Targeting RNA replication in SARS-CoV-2</a></li>
+			</ul>
+                    <div class="publication-date">2020</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/freezing-molecules-completely-still-for-cryo-em/" class="publication-link">Freezing molecules completely still for cryo-EM</a></li>
+			<li><strong>Science:</strong> <a href="https://www.science.org/doi/10.1126/science.abd8035" class="publication-link">Better, faster, and even cheap</a></li>
+			<li><strong>Wiley Analytical Science:</strong> <a href="https://analyticalscience.wiley.com/content/news-do/new-grid-minimizes-movement-problem-cryo-em" class="publication-link">New grid minimizes the movement problem in cryo-EM</a></li>
+			<li><strong>Phys.org:</strong> <a href="https://phys.org/news/2020-10-cryo-electron-microscopy-sharper.html" class="publication-link">Support film makes cryo-electron microscopy sharper</a></li>
+			<li><strong>MRC LMB News:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/student-and-postdoc-prizes-awarded-for-outstanding-work/" class="publication-link">Student and postdoc prizes awarded for outstanding work</a></li>
+			<li><strong>Medical Xpress:</strong> <a href="https://medicalxpress.com/news/2020-01-slashing-energy-cryoem-microscopes-labs.html" class="publication-link">Slashing energy could make cryoEM microscopes affordable for many labs worldwide</a></li>
+			</ul>
+                    <div class="publication-date">2019</div>
+			<ul class="list-disc pl-5 space-y-2">
+			<li><strong>Cambridge Independent:</strong> <a href="https://www.cambridgeindependent.co.uk/news/lmb-unveils-vision-for-next-generation-of-nobel-prize-winning-cryo-em-technology-9089346/" class="publication-link">LMB unveils vision for next generation of Nobel Prize-winning cryo-EM technology</a></li>
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/fast-simple-accessible-and-affordable-the-future-of-cryo-em/" class="publication-link">Fast, simple, accessible and affordable: The future of cryo-EM</a></li>
+			<li><strong>MRC LMB Insight on Research:</strong> <a href="https://www2.mrc-lmb.cam.ac.uk/functionalized-graphene-sheets-on-gold-grids-aid-structure-determination-by-electron-cryo-microscopy/" class="publication-link">Functionalized graphene sheets on gold grids aid structure determination by electron cryo-microscopy</a></li>
+			</ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content">
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Contact Details</h2>
+                 <div class="text-gray-700 leading-relaxed">
+                     <p class="mb-4">Email me at katerinanaydenova [at] gmail [dot] com</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; 2025 Katerina Naydenova. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Navigation Logic ---
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.tab-content');
+            const navMenu = document.getElementById('nav-menu');
+
+            function showTab(hash) {
+                const targetHash = (hash === '' || hash === '#') ? '#home' : hash;
+                let targetSection = document.querySelector(targetHash);
+				
+				// Set the document title dynamically
+	            const pageName = targetHash.substring(1); // "home", "publications", etc.
+	            document.title = `KN - ${pageName.charAt(0).toUpperCase() + pageName.slice(1)}`;
+                
+                if (!targetSection) {
+                    targetSection = document.getElementById('home');
+                }
+
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    // Accessibility: Manage aria-selected state
+                    link.setAttribute('aria-selected', 'false'); 
+
+                    if (link.getAttribute('href') === targetHash || (targetHash === '#home' && link.getAttribute('href') === '#home')) {
+                        link.classList.add('active');
+                        link.setAttribute('aria-selected', 'true');
+                    }
+                });
+
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+                return targetSection;
+            }
+            
+            navMenu.addEventListener('click', function(e) {
+                if (e.target.classList.contains('nav-link')) {
+                    e.preventDefault();
+                    const hash = e.target.getAttribute('href');
+                    history.pushState(null, null, hash);
+                    const activePanel = showTab(hash);
+                    
+                    // Accessibility: Move focus to the newly active tab panel
+                    if (activePanel) {
+                        activePanel.focus();
+                    }
+                }
+            });
+
+            window.addEventListener('popstate', function() {
+                showTab(window.location.hash);
+            });
+            
+            // Initialize tabs based on URL hash
+            showTab(window.location.hash);
+
+            // --- Image Modal Logic ---
+            const carouselContainer = document.getElementById('research-carousel');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+
+			if (imageModal && modalImage && closeModal) {
+			                document.addEventListener('click', function(e) {
+			                    // Check if the clicked element is an image that should open the modal
+			                    if (e.target.tagName === 'IMG' && (e.target.classList.contains('gallery-image') || e.target.classList.contains('journal-cover-image'))) {
+			                        const imgSrc = e.target.src;
+			                        const imgAlt = e.target.alt;
+			                        modalImage.src = imgSrc;
+			                        modalImage.alt = imgAlt;
+			                        imageModal.classList.remove('hidden');
+			                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+			                    }
+			                });
+
+                const hideModal = () => {
+                    imageModal.classList.add('hidden');
+                    modalImage.src = ''; // Clear src to stop loading
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+
+                closeModal.addEventListener('click', hideModal);
+                
+                imageModal.addEventListener('click', function(e) {
+                    if (e.target === imageModal) {
+                        hideModal();
+                    }
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                        hideModal();
+                    }
+                });
+            }
+
+            // --- Carousel Logic ---
+            const carousel = document.getElementById('research-carousel');
+            if (carousel) {
+                const carouselItems = carousel.querySelectorAll('[data-carousel-item]');
+                const prevButton = document.getElementById('carousel-prev');
+                const nextButton = document.getElementById('carousel-next');
+                const totalItems = carouselItems.length;
+                let currentItem = 0;
+                let slideInterval;
+
+                function showItem(index) {
+                    carouselItems.forEach((item, i) => {
+                        if (i === index) {
+                            // Show the target item with a fade-in effect
+                            item.classList.remove('opacity-0', 'pointer-events-none');
+                            item.classList.add('opacity-100');
+                        } else {
+                            // Hide other items with a fade-out effect
+                            item.classList.remove('opacity-100');
+                            item.classList.add('opacity-0', 'pointer-events-none');
+                        }
+                    });
+                }
+
+                function nextItem() {
+                    currentItem = (currentItem + 1) % totalItems;
+                    showItem(currentItem);
+                }
+
+                function prevItem() {
+                    currentItem = (currentItem - 1 + totalItems) % totalItems;
+                    showItem(currentItem);
+                }
+
+                function startAutoSlide() {
+                    stopAutoSlide(); // Clear any existing interval
+
+                    // Accessibility: Check if the user prefers reduced motion before starting auto-play
+                    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                        return;
+                    }
+                    slideInterval = setInterval(nextItem, 5000); // Change image every 5 seconds
+                }
+
+                function stopAutoSlide() {
+                    clearInterval(slideInterval);
+                }
+
+                if (prevButton && nextButton) {
+                    prevButton.addEventListener('click', () => {
+                        prevItem();
+                        startAutoSlide(); // Reset interval on manual navigation
+                    });
+
+                    nextButton.addEventListener('click', () => {
+                        nextItem();
+                        startAutoSlide(); // Reset interval on manual navigation
+                    });
+                }
+
+                // Functionality/UX: Pause carousel on hover or focus
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+                carousel.addEventListener('focusin', stopAutoSlide);
+                carousel.addEventListener('focusout', startAutoSlide);
+
+                // Initialize the carousel
+                if (totalItems > 0) {
+                    // Note: Initialization relies on the HTML defaults (first item opacity-100)
+                    startAutoSlide();
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+
